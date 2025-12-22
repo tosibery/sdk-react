@@ -1,0 +1,36 @@
+{
+    "name": "@dolivroo/react",
+    "version": "1.0.0",
+    "description": "React hooks for Dolivroo SDK - Unified shipping API for Algeria",
+    "main": "dist/index.js",
+    "module": "dist/index.mjs",
+    "types": "dist/index.d.ts",
+    "files": [
+        "dist"
+    ],
+    "scripts": {
+        "build": "tsup src/index.tsx --format cjs,esm --dts --external react",
+        "dev": "tsup src/index.tsx --format cjs,esm --dts --external react --watch"
+    },
+    "peerDependencies": {
+        "react": ">=17.0.0"
+    },
+    "dependencies": {
+        "@dolivroo/sdk": "^1.0.0"
+    },
+    "devDependencies": {
+        "@types/react": "^18.0.0",
+        "react": "^18.0.0",
+        "tsup": "^8.0.0",
+        "typescript": "^5.0.0"
+    },
+    "keywords": [
+        "dolivroo",
+        "react",
+        "hooks",
+        "shipping",
+        "algeria"
+    ],
+    "author": "Dolivroo <support@dolivroo.com>",
+    "license": "MIT"
+}
